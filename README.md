@@ -174,7 +174,7 @@ jupyter notebook
 > Proyek ini adalah **dummy project / fictional case study** yang dibuat murni untuk keperluan
 > portofolio dan pembelajaran. Semua elemen berikut adalah **fiktif sepenuhnya:**
 > - Nama perusahaan "NestBrew Co." dan seluruh detail brand
-> - Data pelanggan (dibuat secara sintetis dengan Python)
+> - Data pelanggan
 > - Angka-angka finansial dan metrik bisnis
 > - Nama kota, paket produk, dan seluruh atribut data
 >
