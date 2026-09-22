@@ -1,6 +1,6 @@
-# ☕ Customer Retention & Churn Analysis — NestBrew Co.
+# Customer Retention & Churn Analysis — NestBrew Co.
 
-> 🏷️ **[DUMMY PROJECT]** — This is a fictional case study created for portfolio purposes.
+> **[DUMMY PROJECT]** — This is a fictional case study created for portfolio purposes.
 > The company "NestBrew Co." and all data used in this project are entirely made up.
 
 ---
@@ -12,7 +12,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 **NestBrew Co.** adalah brand kopi berlangganan (subscription-based) berbasis di Jakarta yang
 mengalami lonjakan churn rate dari **4.2% → 11.7%** dalam 6 bulan terakhir.
@@ -24,7 +24,7 @@ Sebagai Data Analyst, saya ditugaskan untuk:
 
 ---
 
-## 🎯 Business Questions
+## Business Questions
 
 1. Berapa churn rate keseluruhan dan bagaimana trennya per bulan?
 2. Segmen pelanggan mana yang paling rentan churn?
@@ -33,7 +33,7 @@ Sebagai Data Analyst, saya ditugaskan untuk:
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 | Kategori | Tools |
 |----------|-------|
@@ -46,7 +46,7 @@ Sebagai Data Analyst, saya ditugaskan untuk:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 nestbrew-churn-analysis/
@@ -71,10 +71,8 @@ nestbrew-churn-analysis/
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 
-> ⚠️ Dataset ini sepenuhnya dibuat secara sintetis menggunakan Python (Faker + NumPy).
-> Tidak ada data pelanggan nyata yang digunakan.
 
 | Kolom | Tipe | Deskripsi |
 |-------|------|-----------|
@@ -97,19 +95,18 @@ nestbrew-churn-analysis/
 
 ## 🔍 Key Findings
 
-> *Bagian ini diisi setelah analisis selesai. Berikut adalah placeholder yang akan diupdate.*
 
-### 1️⃣ Churn Rate Overview
+### 1. Churn Rate Overview
 - **Overall churn rate: 23.7%** — 1.184 dari 5.000 pelanggan telah churn
 - Churn paling tinggi terjadi pada pelanggan yang baru bergabung (tenure 0–3 bulan)
 - Korelasi terkuat dengan churn: `tenure_months` (r = **-0.565**)
 
-### 2️⃣ Segmen Paling Rentan Churn
+### 2. Segmen Paling Rentan Churn
 - Plan **Basic** memiliki churn rate tertinggi: **28.8%** vs Premium 15.4%
 - Pelanggan **tenure 0–3 bulan** churn rate: **52.3%** — hampir 2× rata-rata
 - **Kombinasi paling berbahaya:** Plan Basic + Tenure 0–3 bulan → **70.7% churn rate**
 
-### 3️⃣ Top Churn Drivers
+### 3. Top Churn Drivers
 | Rank | Faktor | Dampak |
 |------|--------|--------|
 | #1 | `tenure_months` pendek (0–3 bln) | Korelasi -0.565 dengan churn; churn rate 52.3% |
@@ -117,17 +114,17 @@ nestbrew-churn-analysis/
 | #3 | Plan Basic | Churn rate 28.8% vs avg 23.7% |
 | #4 | `avg_rating` rendah (≤ 2.5) | Korelasi negatif dengan retensi |
 
-### 4️⃣ Rekomendasi Strategis
-- 🚀 **Early Onboarding Program** *(Prioritas Tinggi)*: Program 90 hari pertama — welcome email series, loyalty reward bulan ke-2, check-in CS. Target: turunkan churn 0–3 bln sebesar 30%
-- 🎧 **Proactive CS Follow-Up** *(Prioritas Tinggi)*: Auto-trigger follow-up setelah tiket ke-2. Target: kurangi churn tiket ≥3 dari 41.3% → <25%
-- 📦 **Plan Upgrade Campaign** *(Prioritas Menengah)*: Trial gratis Standard 1 bulan untuk pengguna Basic di bulan ke-3. Target: 15% migrasi ke plan lebih tinggi
-- ⭐ **Rating Recovery Campaign** *(Prioritas Menengah)*: Survei + penggantian produk untuk pelanggan rating ≤ 3.0. Target: avg rating ≥ 4.0
+### 4. Rekomendasi Strategis
+- **Early Onboarding Program** *(Prioritas Tinggi)*: Program 90 hari pertama — welcome email series, loyalty reward bulan ke-2, check-in CS. Target: turunkan churn 0–3 bln sebesar 30%
+- **Proactive CS Follow-Up** *(Prioritas Tinggi)*: Auto-trigger follow-up setelah tiket ke-2. Target: kurangi churn tiket ≥3 dari 41.3% → <25%
+- **Plan Upgrade Campaign** *(Prioritas Menengah)*: Trial gratis Standard 1 bulan untuk pengguna Basic di bulan ke-3. Target: 15% migrasi ke plan lebih tinggi
+- **Rating Recovery Campaign** *(Prioritas Menengah)*: Survei + penggantian produk untuk pelanggan rating ≤ 3.0. Target: avg rating ≥ 4.0
 
-> 📌 **Estimasi dampak gabungan:** Churn rate proyeksi turun dari **23.7% → 14–16%**, setara mempertahankan **~400–500 pelanggan** per semester.
+> **Estimasi dampak gabungan:** Churn rate proyeksi turun dari **23.7% → 14–16%**, setara mempertahankan **~400–500 pelanggan** per semester.
 
 ---
 
-## 📈 Dashboard Preview
+## Dashboard Preview
 
 ![Summary Dashboard](data/viz_11_summary_dashboard.png)
 
@@ -148,7 +145,7 @@ nestbrew-churn-analysis/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Prerequisites
 ```bash
@@ -158,19 +155,19 @@ pip install pandas numpy matplotlib seaborn plotly faker jupyter
 ### Langkah-langkah
 ```bash
 # 1. Clone repository ini
-git clone https://github.com/[username]/nestbrew-churn-analysis.git
+git clone https://github.com/armalist/Dummy-Project-Customer-Retention-Churn-Analysis.git
 cd nestbrew-churn-analysis
 
 # 2. Jalankan notebook secara berurutan
 jupyter notebook
 
-# 3. Buka notebook sesuai urutan:
+# 3. Buka folder sesuai urutan:
 #    01 → 02 → 03
 ```
 
 ---
 
-## 📝 Project Context & Disclaimer
+## Project Context & Disclaimer
 
 > **⚠️ PENTING — HARAP DIBACA:**
 >
@@ -186,25 +183,24 @@ jupyter notebook
 
 ---
 
-## 👤 Author
+## Author
 
 **Ariqah Maulia Listiani**
-📧 ariqahmaulialistiani@gmail.com
-🔗 [LinkedIn](#) | [GitHub](#) | [Tableau Public](#)
+ariqahmaulialistiani@gmail.com
+[LinkedIn](#) | [GitHub](#) | [Tableau Public](#)
 
 ---
 
 ## 📚 Learning Outcomes
 
 Melalui proyek ini, saya mempraktikkan:
-- ✅ Pembuatan **synthetic dataset** yang realistis dengan Python (Faker + NumPy)
-- ✅ **Exploratory Data Analysis (EDA)** end-to-end — distribusi, missing values, outlier
-- ✅ **Feature engineering** — `tenure_months`, `tenure_group`, `rating_group`
-- ✅ **Analisis korelasi dan segmentasi** — heatmap, cross-tabulation, churn driver
-- ✅ **Storytelling data** untuk audiens bisnis non-teknis (CMO level)
-- ✅ **Visualisasi multi-chart** dengan Matplotlib & Seaborn (11 chart)
-- ✅ **Rekomendasi bisnis actionable** berdasarkan temuan data
-- ✅ **Presentasi eksekutif** dalam format PowerPoint (.pptx)
+- **Exploratory Data Analysis (EDA)** end-to-end — distribusi, missing values, outlier
+- **Feature engineering** — `tenure_months`, `tenure_group`, `rating_group`
+- **Analisis korelasi dan segmentasi** — heatmap, cross-tabulation, churn driver
+- **Storytelling data** untuk audiens bisnis non-teknis (CMO level)
+- **Visualisasi multi-chart** dengan Matplotlib & Seaborn (11 chart)
+- **Rekomendasi bisnis actionable** berdasarkan temuan data
+- **Presentasi eksekutif** dalam format PowerPoint (.pptx)
 
 ---
 
