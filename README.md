@@ -1,4 +1,4 @@
-# ☕ Customer Retention & Churn Analysis — NestBrew Co.
+# Customer Retention & Churn Analysis — NestBrew Co.
 
 > **[DUMMY PROJECT]** — This is a fictional case study created for portfolio purposes.
 > The company "NestBrew Co." and all data used in this project are entirely made up.
