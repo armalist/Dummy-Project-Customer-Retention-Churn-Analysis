@@ -1,6 +1,6 @@
-# Customer Retention & Churn Analysis — NestBrew Co.
+# ☕ Customer Retention & Churn Analysis — NestBrew Co.
 
-> **[DUMMY PROJECT]** — This is a fictional case study created for portfolio purposes.
+> 🏷️ **[DUMMY PROJECT]** — This is a fictional case study created for portfolio purposes.
 > The company "NestBrew Co." and all data used in this project are entirely made up.
 
 ---
@@ -12,7 +12,7 @@
 
 ---
 
-## Dummy Project Overview
+## 📌 Project Overview
 
 **NestBrew Co.** adalah brand kopi berlangganan (subscription-based) berbasis di Jakarta yang
 mengalami lonjakan churn rate dari **4.2% → 11.7%** dalam 6 bulan terakhir.
@@ -24,7 +24,7 @@ Sebagai Data Analyst, saya ditugaskan untuk:
 
 ---
 
-## Business Questions
+## 🎯 Business Questions
 
 1. Berapa churn rate keseluruhan dan bagaimana trennya per bulan?
 2. Segmen pelanggan mana yang paling rentan churn?
@@ -33,7 +33,7 @@ Sebagai Data Analyst, saya ditugaskan untuk:
 
 ---
 
-## Tools & Technologies
+## 🛠️ Tools & Technologies
 
 | Kategori | Tools |
 |----------|-------|
@@ -46,20 +46,20 @@ Sebagai Data Analyst, saya ditugaskan untuk:
 
 ---
 
-## Repository Structure
+## 📂 Repository Structure
 
 ```
 nestbrew-churn-analysis/
 │
-├── data/
+├── 📁 data/
 │   └── nestbrew_customers_dummy.csv     ← Dataset dummy (5.000 baris)
 │
-├── notebooks/
+├── 📁 notebooks/
 │   ├── 01_data_generation.ipynb         ← Pembuatan dataset dummy
 │   ├── 02_EDA_cleaning.ipynb            ← Eksplorasi & pembersihan data
 │   └── 03_churn_analysis.ipynb          ← Analisis utama & insight
 │
-├── dashboard/
+├── 📁 dashboard/
 │   ├── nestbrew_dashboard_screenshot.png
 │   └── [Link Tableau Public]
 │
@@ -71,10 +71,10 @@ nestbrew-churn-analysis/
 
 ---
 
-## Dataset Overview
+## 📊 Dataset Overview
 
-> Dataset ini dibuat menggunakan Python.
-> Tidak ada data pelanggan nyata yang digunakan (data dummy).
+> ⚠️ Dataset ini sepenuhnya dibuat secara sintetis menggunakan Python (Faker + NumPy).
+> Tidak ada data pelanggan nyata yang digunakan.
 
 | Kolom | Tipe | Deskripsi |
 |-------|------|-----------|
@@ -95,43 +95,60 @@ nestbrew-churn-analysis/
 
 ---
 
-## Key Findings
+## 🔍 Key Findings
 
-### 1. Churn Rate Overview
-- **Overall churn rate:** `XX.X%` dari total 5.000 pelanggan
-- Tren menunjukkan lonjakan signifikan mulai bulan `[bulan]`
+> *Bagian ini diisi setelah analisis selesai. Berikut adalah placeholder yang akan diupdate.*
 
-### 2. Segmen Paling Rentan Churn
-- Plan **Basic** memiliki churn rate tertinggi: `XX%`
-- Pelanggan dengan **tenure < 3 bulan** memiliki risiko churn `XX%` lebih tinggi
-- Kota dengan churn tertinggi: `[Kota X]`
+### 1️⃣ Churn Rate Overview
+- **Overall churn rate: 23.7%** — 1.184 dari 5.000 pelanggan telah churn
+- Churn paling tinggi terjadi pada pelanggan yang baru bergabung (tenure 0–3 bulan)
+- Korelasi terkuat dengan churn: `tenure_months` (r = **-0.565**)
 
-### 3. Top Churn Drivers
+### 2️⃣ Segmen Paling Rentan Churn
+- Plan **Basic** memiliki churn rate tertinggi: **28.8%** vs Premium 15.4%
+- Pelanggan **tenure 0–3 bulan** churn rate: **52.3%** — hampir 2× rata-rata
+- **Kombinasi paling berbahaya:** Plan Basic + Tenure 0–3 bulan → **70.7% churn rate**
+
+### 3️⃣ Top Churn Drivers
 | Rank | Faktor | Dampak |
 |------|--------|--------|
-| #1 | `support_tickets` tinggi (≥ 3 tiket) | Churn rate `XX%` lebih tinggi |
-| #2 | `avg_rating` rendah (≤ 2.5) | Korelasi kuat dengan churn |
-| #3 | Tenure < 3 bulan | Periode paling kritis |
+| #1 | `tenure_months` pendek (0–3 bln) | Korelasi -0.565 dengan churn; churn rate 52.3% |
+| #2 | `support_tickets` ≥ 3 tiket | Churn rate rata-rata **41.3%** — 2× lebih tinggi dari avg |
+| #3 | Plan Basic | Churn rate 28.8% vs avg 23.7% |
+| #4 | `avg_rating` rendah (≤ 2.5) | Korelasi negatif dengan retensi |
 
-### 4. Rekomendasi Strategis
-- **Early Onboarding Program:** Fokus engagement di 90 hari pertama
-- **Proactive CS Follow-up:** Hubungi pelanggan setelah tiket ke-2
-- **Rating Recovery Campaign:** Tawarkan benefit khusus ke pelanggan rating ≤ 3
-- **Plan Upgrade Incentive:** Dorong migrasi dari Basic ke Standard
+### 4️⃣ Rekomendasi Strategis
+- 🚀 **Early Onboarding Program** *(Prioritas Tinggi)*: Program 90 hari pertama — welcome email series, loyalty reward bulan ke-2, check-in CS. Target: turunkan churn 0–3 bln sebesar 30%
+- 🎧 **Proactive CS Follow-Up** *(Prioritas Tinggi)*: Auto-trigger follow-up setelah tiket ke-2. Target: kurangi churn tiket ≥3 dari 41.3% → <25%
+- 📦 **Plan Upgrade Campaign** *(Prioritas Menengah)*: Trial gratis Standard 1 bulan untuk pengguna Basic di bulan ke-3. Target: 15% migrasi ke plan lebih tinggi
+- ⭐ **Rating Recovery Campaign** *(Prioritas Menengah)*: Survei + penggantian produk untuk pelanggan rating ≤ 3.0. Target: avg rating ≥ 4.0
 
----
-
-## Dashboard Preview
-
-```
-[ Screenshot Dashboard Tableau ]
-```
-
-🔗 **Link Dashboard Tableau Public:** [Klik di sini](#) *(akan diupdate)*
+> 📌 **Estimasi dampak gabungan:** Churn rate proyeksi turun dari **23.7% → 14–16%**, setara mempertahankan **~400–500 pelanggan** per semester.
 
 ---
 
-## How to Run
+## 📈 Dashboard Preview
+
+![Summary Dashboard](data/viz_11_summary_dashboard.png)
+
+> Dashboard ringkasan yang menampilkan KPI utama, tren churn bulanan, churn per plan, dan top churn drivers dalam satu tampilan.
+
+**Visualisasi lengkap tersedia di folder `data/`:**
+- `viz_01` — Distribusi Churn (Donut + Bar)
+- `viz_02` — Distribusi Variabel Numerik per Segmen
+- `viz_03` — Churn Rate per Subscription Plan
+- `viz_04` — Churn Rate per Tenure Group
+- `viz_05` — Heatmap Korelasi Antar Variabel
+- `viz_06` — Churn Rate per Kota
+- `viz_07` — Perbandingan Profil Retain vs Churn
+- `viz_08` — Tren Churn Bulanan
+- `viz_09` — Dampak Support Tickets terhadap Churn
+- `viz_10` — Peta Risiko: Plan × Tenure
+- `viz_11` — Summary Dashboard (gabungan)
+
+---
+
+## 🚀 How to Run
 
 ### Prerequisites
 ```bash
@@ -153,7 +170,7 @@ jupyter notebook
 
 ---
 
-## Project Context & Disclaimer
+## 📝 Project Context & Disclaimer
 
 > **⚠️ PENTING — HARAP DIBACA:**
 >
@@ -169,7 +186,7 @@ jupyter notebook
 
 ---
 
-## Author
+## 👤 Author
 
 **Ariqah Maulia Listiani**
 📧 ariqahmaulialistiani@gmail.com
@@ -177,14 +194,17 @@ jupyter notebook
 
 ---
 
-## Learning Outcomes
+## 📚 Learning Outcomes
 
 Melalui proyek ini, saya mempraktikkan:
-- Exploratory Data Analysis (EDA) end-to-end
-- Feature engineering (`tenure_months`)
-- Analisis korelasi dan segmentasi
-- Storytelling data untuk audiens bisnis non-teknis
-- Pembuatan dashboard interaktif
+- ✅ Pembuatan **synthetic dataset** yang realistis dengan Python (Faker + NumPy)
+- ✅ **Exploratory Data Analysis (EDA)** end-to-end — distribusi, missing values, outlier
+- ✅ **Feature engineering** — `tenure_months`, `tenure_group`, `rating_group`
+- ✅ **Analisis korelasi dan segmentasi** — heatmap, cross-tabulation, churn driver
+- ✅ **Storytelling data** untuk audiens bisnis non-teknis (CMO level)
+- ✅ **Visualisasi multi-chart** dengan Matplotlib & Seaborn (11 chart)
+- ✅ **Rekomendasi bisnis actionable** berdasarkan temuan data
+- ✅ **Presentasi eksekutif** dalam format PowerPoint (.pptx)
 
 ---
 
