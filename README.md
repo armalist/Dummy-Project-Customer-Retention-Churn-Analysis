@@ -95,7 +95,7 @@ nestbrew-churn-analysis/
 
 ---
 
-## 🔍 Key Findings
+## Key Findings
 
 ### 1. Churn Rate Overview
 - **Overall churn rate:** `XX.X%` dari total 5.000 pelanggan
