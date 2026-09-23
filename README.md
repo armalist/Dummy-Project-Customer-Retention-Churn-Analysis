@@ -5,13 +5,6 @@
 
 ---
 
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Tools](https://img.shields.io/badge/Tools-Python%20%7C%20Pandas%20%7C%20Tableau-blue)
-![Type](https://img.shields.io/badge/Type-Dummy%20Project-orange)
-![Domain](https://img.shields.io/badge/Domain-Customer%20Analytics-purple)
-
----
-
 ## Project Overview
 
 **NestBrew Co.** adalah brand kopi berlangganan (subscription-based) berbasis di Jakarta yang
