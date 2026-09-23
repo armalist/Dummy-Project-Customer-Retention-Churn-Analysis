@@ -126,11 +126,11 @@ nestbrew-churn-analysis/
 
 ## Dashboard Preview
 
-![Summary Dashboard](data/viz_11_summary_dashboard.png)
+Summary: https://github.com/armalist/Dummy-Project-Customer-Retention-Churn-Analysis/blob/main/03/viz_11_summary_dashboard.png
 
 > Dashboard ringkasan yang menampilkan KPI utama, tren churn bulanan, churn per plan, dan top churn drivers dalam satu tampilan.
 
-**Visualisasi lengkap tersedia di folder `data/`:**
+**Visualisasi lengkap tersedia di folder 02 dan 03:**
 - `viz_01` — Distribusi Churn (Donut + Bar)
 - `viz_02` — Distribusi Variabel Numerik per Segmen
 - `viz_03` — Churn Rate per Subscription Plan
@@ -187,7 +187,7 @@ jupyter notebook
 
 **Ariqah Maulia Listiani**
 ariqahmaulialistiani@gmail.com
-[LinkedIn](#) | [GitHub](#) | [Tableau Public](#)
+LinkedIn: https://www.linkedin.com/in/ariqah-maulia/
 
 ---
 
