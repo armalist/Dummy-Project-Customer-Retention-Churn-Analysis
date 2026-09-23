@@ -61,7 +61,7 @@ nestbrew-churn-analysis/
 │
 ├── 📁 dashboard/
 │   ├── nestbrew_dashboard_screenshot.png
-│   └── [Link Tableau Public]
+│   └── (https://public.tableau.com/app/profile/ariqah.maulia/viz/CustomerRetentionChurnAnalysisNestBrewCo/Dashboard1?publish=yes)
 │
 ├── 📁 report/
 │   └── NestBrew_Churn_Analysis_Report.pdf
@@ -93,7 +93,7 @@ nestbrew-churn-analysis/
 
 ---
 
-## 🔍 Key Findings
+## Key Findings
 
 
 ### 1. Churn Rate Overview
