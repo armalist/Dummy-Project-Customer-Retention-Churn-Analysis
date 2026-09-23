@@ -186,8 +186,10 @@ jupyter notebook
 ## Author
 
 **Ariqah Maulia Listiani**
-ariqahmaulialistiani@gmail.com
-LinkedIn: https://www.linkedin.com/in/ariqah-maulia/
+- Email: ariqahmaulialistiani@gmail.com
+- LinkedIn: https://www.linkedin.com/in/ariqah-maulia/
+- Github: https://github.com/armalist
+- Tableau Public: https://public.tableau.com/app/profile/ariqah.maulia/vizzes
 
 ---
 
