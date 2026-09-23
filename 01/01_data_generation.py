@@ -221,7 +221,7 @@ def generate_dataset(n: int = N_CUSTOMERS) -> pd.DataFrame:
 
 def print_summary(df: pd.DataFrame):
     print(f"\n{'='*55}")
-    print("  ✅ DATASET BERHASIL DIBUAT — RINGKASAN")
+    print("  DATASET BERHASIL DIBUAT — RINGKASAN")
     print(f"{'='*55}")
     print(f"  Total baris     : {len(df):,}")
     print(f"  Total kolom     : {df.shape[1]}")
@@ -229,19 +229,19 @@ def print_summary(df: pd.DataFrame):
     print(f"  Duplikat        : {df.duplicated().sum()}")
 
     churn_rate = df['churn'].mean() * 100
-    print(f"\n  📊 Churn Rate Keseluruhan: {churn_rate:.1f}%")
+    print(f"\n  Churn Rate Keseluruhan: {churn_rate:.1f}%")
 
-    print(f"\n  📦 Distribusi per Plan:")
+    print(f"\n  Distribusi per Plan:")
     plan_churn = df.groupby('subscription_plan')['churn'].agg(['count','mean'])
     plan_churn['mean'] = (plan_churn['mean'] * 100).round(1)
     plan_churn.columns = ['Jumlah', 'Churn Rate (%)']
     print(plan_churn.to_string())
 
-    print(f"\n  🗓️  Rentang Tanggal:")
+    print(f"\n  Rentang Tanggal:")
     print(f"  Join date  : {df['join_date'].min()} → {df['join_date'].max()}")
     print(f"  Tenure     : {df['tenure_months'].min()} – {df['tenure_months'].max()} bulan")
     print(f"  Spend      : Rp {df['monthly_spend'].min():,} – Rp {df['monthly_spend'].max():,}")
-    print(f"\n  🏙️  Top 5 Kota:")
+    print(f"\n  Top 5 Kota:")
     print(df['city'].value_counts().head().to_string())
     print(f"\n{'='*55}\n")
 
@@ -262,6 +262,6 @@ if __name__ == '__main__':
     output_path = 'data/nestbrew_customers_dummy.csv'
     df.to_csv(output_path, index=False)
 
-    print(f"  💾 File disimpan ke: {output_path}")
+    print(f"  File disimpan ke: {output_path}")
     print(f"  Ukuran file       : {os.path.getsize(output_path) / 1024:.1f} KB")
-    print(f"\n  ✅ Selesai! Buka file CSV untuk memulai EDA.\n")
+    print(f"\n  Selesai! Buka file CSV untuk memulai EDA.\n")
